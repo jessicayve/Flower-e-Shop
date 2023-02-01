@@ -47,6 +47,8 @@ text-align: center;
 
 const Logo = styled.h1`
     font-weight: bold;
+    font-size: 38px;
+    color:coral;
 
 `
 const Right = styled.div`
@@ -74,7 +76,7 @@ const Navbar = () => {
                     <Language>EN</Language>
                     <SearchContainer>
                         <Input />
-                        <SearchIcon style={{color:"gray", fontSize:14}}/>
+                        <SearchIcon style={{ color: "gray", fontSize: 14 }} />
 
                     </SearchContainer>
                 </Left>
