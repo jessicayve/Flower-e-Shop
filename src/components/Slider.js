@@ -50,10 +50,13 @@ const Slide = styled.div`
 const ImgContainer = styled.div`
   height: 100%;
   flex: 1;
+  display:flex;
+  justify-content: center;
+
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 90%;
 `;
 
 const InfoContainer = styled.div`
@@ -80,6 +83,8 @@ const Button = styled.button`
 `;
 
 const Slider = () => {
+
+
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
     if (direction === "left") {

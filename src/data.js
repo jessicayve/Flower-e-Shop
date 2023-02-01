@@ -1,24 +1,30 @@
+import driedSlide from "../src/img/driedSlide.jpg"
+import valentineSlide from "../src/img/valentineSlide.jpg"
+import winterSlide from "../src/img/winterSlide.jpg"
+import dried2Slide from "../src/img/dried2Slide.jpg"
+
+
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/XsdmR2c/1.png",
-      title: "SUMMER SALE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "f5fafd",
+      img: dried2Slide,
+      title: "DRIED FLOWERS",
+      desc: "PRESENTING OUR NEW COLLECTION OF DRIED FLOWERS.",
+      bg: "f4f4f4",
     },
     {
       id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
-      title: "AUTUMN COLLECTION",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fcf1ed",
+      img: valentineSlide,
+      title: "VALENTINE'S DAY COLLECTION",
+      desc: "CHECK OUT OUR VALENTINES'S FLORIST'S CHOICES.",
+      bg: "f4f4f4",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
-      title: "LOUNGEWEAR LOVE",
-      desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "fbf0f4",
+      img: winterSlide,
+      title: "WINTER COLLECTION",
+      desc: "30% OFF ON OUR WINTER COLLECTION.",
+      bg: "f4f4f4",
     },
   ];
 
