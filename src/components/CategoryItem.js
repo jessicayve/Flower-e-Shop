@@ -31,8 +31,9 @@ const Info = styled.div`
 
 const Title = styled.h1`
     color: #120907;
-    font-weight: 200;
-    margin-top: 490px;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 510px;
     cursor: pointer;
   
 `;
