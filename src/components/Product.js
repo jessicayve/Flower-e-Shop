@@ -21,7 +21,7 @@ const Info = styled.div`
 const Container = styled.div`
   flex: 1;
   margin: 5px;
-  margin-top:26px ;
+  margin-top:60px ;
   min-width: 280px;
   height: 350px;
   display: flex;
