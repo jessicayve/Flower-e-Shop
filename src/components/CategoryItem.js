@@ -33,7 +33,7 @@ const Title = styled.h1`
     color: #120907;
     font-weight: 300;
     font-size: 30px;
-    margin-top: 510px;
+    margin-top: 530px;
     cursor: pointer;
   
 `;
