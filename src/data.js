@@ -18,9 +18,10 @@ import flowershop10 from "../src/img/flowershop10.jpg"
 
 
 
+
 export const sliderItems = [
     {
-        id: 1,
+        id: "s1",
         img: winterSlide,
         title: "WINTER COLLECTION",
         desc: "30% OFF ON OUR WINTER COLLECTION.",
@@ -28,14 +29,14 @@ export const sliderItems = [
 
     },
     {
-        id: 2,
+        id: "s2",
         img: valentineSlide,
         title: "VALENTINE'S DAY COLLECTION",
         desc: "CHECK OUT OUR VALENTINES'S FLORIST'S CHOICES.",
         bg: "f4f4f4",
     },
     {
-        id: 3,
+        id: "s3",
         img: driedSlide,
         title: "DRIED FLOWERS",
         desc: "PRESENTING OUR NEW COLLECTION OF DRIED FLOWERS.",
@@ -46,62 +47,55 @@ export const sliderItems = [
 
 export const categories = [
     {
-        id: 1,
+        id: "c1",
         img: freshflower,
         title: "FRESH FLOWERS",
     },
     {
-        id: 2,
+        id: "c2",
         img: brideflower,
         title: "BRIDAL BOUQUET",
 
     },
     {
-        id: 3,
+        id: "c3",
         img: vasefloral,
         title: "FLORAL VASES",
     },
 ];
 
-export const popularProducts = [
+export const product = [
     {
-        id: 1,
+        id: "p1",
         img: flowershop1,
     },
     {
-        id: 2,
+        id: "p2",
         img: flowershop2,
     },
     {
-        id: 3,
+        id: "p3",
         img:flowershop10,
     },
     {
-        id: 4,
+        id: "p4",
         img: flowershop4,
     },
     {
-        id: 5,
+        id: "p5",
         img: flowershop5,
     },
     {
-        id: 6,
+        id: "p6",
         img: flowershop6,
     },
     {
-        id: 7,
+        id: "p7",
         img: flowershop7,
     },
     {
-        id: 8,
+        id: "p8",
         img: flowershop8,
-    },
-    {
-        id: 9,
-        img: flowershop9,
-    },
-    {
-        id: 10,
-        img: flowershop3,
-    },
+    }
 ]
+

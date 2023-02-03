@@ -1,9 +1,11 @@
 import { EnvelopeSimple, GithubLogo, LinkedinLogo, MapPin, Phone } from "phosphor-react"
 import styled from "styled-components"
+import { mobile } from "../responsive"
 
 
 const Container = styled.div`
 display: flex;
+${mobile({flexDirection:"column"})}
 `
 
 const Left = styled.div`
@@ -35,6 +37,7 @@ justify-content: center;
 const Center = styled.div`
 flex:1;
 padding: 20px;
+${mobile({display:"none"})}
 `
 const Title = styled.h3`
 margin-bottom: 30px;
@@ -56,6 +59,7 @@ cursor: pointer;
 const Right = styled.div`
 flex:1;
 padding: 20px;
+${mobile({backgroundColor:"#fff8f8"})}
 `
 
 const ContactItem =styled.div`
@@ -75,7 +79,9 @@ const Footer = () => {
         <Left>
             <Logo>Jessica Yve</Logo>
             <Desc>
-                description here
+            There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
             </Desc>
             <SocialContainer>
                 <SocialIcon>

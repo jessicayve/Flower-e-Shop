@@ -1,4 +1,7 @@
 import styled from "styled-components"
+import { useNavigate } from "react-router-dom"
+import { goToProductListPage } from "../routes/coordinator"
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   flex: 1;
@@ -11,8 +14,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  cursor: pointer;
-  
+  ${mobile({height:"30vh"})}
 `;
 
 const Info = styled.div`
@@ -25,27 +27,39 @@ const Info = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
- 
+  
 `;
 
 const Title = styled.h1`
-    color: #120907;
-    font-weight: 300;
-    font-size: 30px;
-    margin-top: 530px;
+    color:white;
+    margin-bottom: 20px;
+    background-color: #908278;
+    border-radius: 2px;
+    opacity: 0.9;
+    
+`;
+
+const Button = styled.button`
+    border:none;
+    padding: 10px;
+    background-color: white;
+    color:gray;
     cursor: pointer;
-  
+    font-weight: 600;
 `;
 
 
 
 const CategoryItem = ({ item }) => {
+  
+  const navigate = useNavigate()
+
     return (
       <Container>
         <Image src={item.img} />
         <Info>
           <Title>{item.title}</Title>
+          <Button onClick={() => goToProductListPage(navigate)}>SHOP NOW</Button>
         </Info>
       </Container>
     );
