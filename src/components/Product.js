@@ -1,5 +1,10 @@
 import { Heart, MagnifyingGlass, ShoppingCart } from "phosphor-react"
 import styled from "styled-components"
+import { useNavigate } from "react-router-dom";
+import { goToProductDetailPage } from "../routes/coordinator";
+import { product } from "../data";
+
+
 
 const Info = styled.div`
   opacity: 0;
@@ -15,20 +20,17 @@ const Info = styled.div`
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
-  
 `;
 
 const Container = styled.div`
   flex: 1;
   margin: 5px;
-  margin-top:60px ;
   min-width: 280px;
   height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1px;
-  border:0.5px solid #f6f6e9;
+  background-color: #f5fbfd;
   position: relative;
   &:hover ${Info}{
     opacity: 1;
@@ -44,10 +46,8 @@ const Circle = styled.div`
 `;
 
 const Image = styled.img`
-  height: 98%;
-  width: 268px;
+  height: 75%;
   z-index: 2;
-  
 `;
 
 const Icon = styled.div`
@@ -65,14 +65,16 @@ const Icon = styled.div`
     transform: scale(1.1);
   }
 `;
-
 const Product = ({ item }) => {
+
+  const navigate = useNavigate()
+  
 
     return (
         <Container>
             <Circle />
             <Image src={item.img} />
-            <Info>
+            <Info  onClick={() => goToProductDetailPage(navigate,product.id)}>
                 <Icon>
                     <ShoppingCart size={28} />
                 </Icon>

@@ -2,7 +2,9 @@ import { CaretLeft, CaretRight } from "phosphor-react"
 import { useState } from "react"
 import styled from "styled-components"
 import { sliderItems } from "../data"
-
+import { useNavigate } from "react-router-dom"
+import { goToProductListPage } from "../routes/coordinator"
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   width: 100%;
@@ -10,7 +12,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  
+  ${mobile({display:"none"})}
 `;
 
 const Arrow = styled.div`
@@ -95,7 +97,11 @@ const Slider = () => {
     }
   };
 
+  const navigate = useNavigate()
+
   return (
+  
+
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
       <CaretLeft size={28} />
@@ -109,7 +115,7 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW</Button>
+              <Button onClick={() => goToProductListPage(navigate)} >SHOW NOW</Button>
             </InfoContainer>
           </Slide>
         ))}

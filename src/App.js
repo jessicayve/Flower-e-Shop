@@ -1,8 +1,6 @@
 import React from 'react'
-import Home from './pages/Home';
-import { createGlobalStyle } from "styled-components";
-import ProductList from './pages/ProductList';
-import Product from './pages/Product';
+import Router from './routes/Router'
+import { createGlobalStyle } from "styled-components"
 
 
 
@@ -19,7 +17,7 @@ const App = () => {
   return (
     <>
     <GlobalStyled/>
-   <Product/>
+<Router/>
 
     </>
   )
